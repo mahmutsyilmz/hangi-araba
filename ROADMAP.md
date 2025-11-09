@@ -58,11 +58,11 @@
 
 ### 0.3 Tasarım Sistemi Temelleri
 
-- [ ] TailwindCSS konfigürasyonunu özelleştir
-- [ ] Renk paleti tanımla (primary, secondary, accent, etc.)
-- [ ] Tipografi ayarları (font sizes, weights)
-- [ ] Spacing scale tanımla
-- [ ] Dark mode desteği hazırlığı (opsiyonel)
+- [x] TailwindCSS konfigürasyonunu özelleştir
+- [x] Renk paleti tanımla (primary, secondary, accent, etc.)
+- [x] Tipografi ayarları (font sizes, weights)
+- [x] Spacing scale tanımla
+- [x] Dark mode desteği hazırlığı (opsiyonel)
 
 ### 0.4 Dokümantasyon
 
