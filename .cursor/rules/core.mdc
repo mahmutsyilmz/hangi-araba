@@ -23,3 +23,18 @@ alwaysApply: true
 - Dosya yapısı: `src/features/<feature>`.
 
 @src/
+
+
+# Frontend Design Rules
+- Always use TailwindCSS for all layout and styling.
+- Prioritize responsive, clean, modern, and minimal UI.
+- Use consistent spacing (Tailwind scale: 2, 4, 8, 12, 16, etc.).
+- Each section should have sufficient padding and margin for readability.
+- Avoid over-nesting divs; prefer semantic HTML (section, header, main, footer).
+- Use `flex` or `grid` layouts — avoid absolute positioning unless necessary.
+- Components must be mobile-first responsive.
+- Typography should follow hierarchy: h1 > h2 > h3 > p.
+- Use neutral and soft tones; avoid harsh colors or gradients.
+- All buttons should have hover and focus states.
+- If uncertain about visual hierarchy, use cards or sections to separate content.
+
