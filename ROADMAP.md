@@ -27,6 +27,7 @@
 **Öncelik:** 🔴 Yüksek
 
 ### 0.1 Proje Yapısı Kurulumu
+
 - [x] `src/features/` klasör yapısı oluştur
   - [x] `src/features/profile/` - Profil özellikleri
   - [x] `src/features/vehicle-selection/` - Araç seçimi
@@ -47,14 +48,16 @@
 - [x] `src/store/` veya `src/context/` - State yönetimi (Context API veya Zustand)
 
 ### 0.2 Bağımlılıklar & Konfigürasyon
-- [ ] `.env.example` dosyası oluştur
-- [ ] CarQuery API anahtarı için env değişkeni ekle
-- [ ] ESLint konfigürasyonunu projeye göre özelleştir
-- [ ] Prettier konfigürasyonu ekle (opsiyonel)
-- [ ] Git hooks (husky + lint-staged) kurulumu
-- [ ] Path alias'ları test et (`@/` imports)
+
+- [x] `.env.example` dosyası oluştur
+- [x] CarQuery API anahtarı için env değişkeni ekle
+- [x] ESLint konfigürasyonunu projeye göre özelleştir
+- [x] Prettier konfigürasyonu ekle (opsiyonel)
+- [x] Git hooks (husky + lint-staged) kurulumu
+- [x] Path alias'ları test et (`@/` imports)
 
 ### 0.3 Tasarım Sistemi Temelleri
+
 - [ ] TailwindCSS konfigürasyonunu özelleştir
 - [ ] Renk paleti tanımla (primary, secondary, accent, etc.)
 - [ ] Tipografi ayarları (font sizes, weights)
@@ -62,6 +65,7 @@
 - [ ] Dark mode desteği hazırlığı (opsiyonel)
 
 ### 0.4 Dokümantasyon
+
 - [ ] `CONTRIBUTING.md` oluştur
 - [ ] `ARCHITECTURE.md` oluştur (klasör yapısı açıklaması)
 - [ ] README.md'yi projeye göre güncelle
@@ -74,6 +78,7 @@
 **Öncelik:** 🔴 Yüksek
 
 ### 1.1 CarQuery API Entegrasyonu
+
 - [ ] CarQuery API client oluştur (`src/lib/api/carquery.ts`)
 - [ ] API key yönetimi ve error handling
 - [ ] Rate limiting ve caching stratejisi
@@ -81,6 +86,7 @@
 - [ ] Mock data fallback mekanizması
 
 ### 1.2 Veri Modelleri
+
 - [ ] `Vehicle` type tanımı (tüm teknik özellikler)
   - [ ] Güç-aktarma özellikleri
   - [ ] Şanzıman & çekiş
@@ -96,6 +102,7 @@
 - [ ] Veri normalizasyon fonksiyonları
 
 ### 1.3 Veri Servisleri
+
 - [ ] `src/services/vehicleService.ts` - Araç verisi çekme
   - [ ] Markaları getir
   - [ ] Modelleri getir (markaya göre)
@@ -107,12 +114,14 @@
 - [ ] Loading states yönetimi
 
 ### 1.4 Veri Cache Stratejisi
+
 - [ ] React Query veya SWR kurulumu
 - [ ] Cache invalidation stratejisi
 - [ ] Static data caching (markalar, modeller)
 - [ ] Dynamic data caching (trim detayları)
 
 ### 1.5 Fallback & Mock Data
+
 - [ ] Mock vehicle data seti oluştur (en popüler 30 marka/model)
 - [ ] CSV seed data hazırlığı (opsiyonel)
 - [ ] "Veri bulunamadı" durumları için fallback UI
@@ -125,6 +134,7 @@
 **Öncelik:** 🟡 Orta-Yüksek
 
 ### 2.1 Temel UI Bileşenleri
+
 - [ ] `Button` - Primary, secondary, outline varyantları
 - [ ] `Input` - Text, number, textarea
 - [ ] `Select` - Dropdown, searchable select
@@ -137,6 +147,7 @@
 - [ ] `ErrorBoundary` - Hata yakalama
 
 ### 2.2 Form Bileşenleri
+
 - [ ] `FormField` - Label + Input + Error wrapper
 - [ ] `FormSelect` - Label + Select + Error wrapper
 - [ ] `FormRadio` - Radio button grubu
@@ -145,6 +156,7 @@
 - [ ] Form state yönetimi (React Hook Form veya native)
 
 ### 2.3 Özel Bileşenler
+
 - [ ] `VehicleCard` - Araç kartı gösterimi
 - [ ] `ComparisonTable` - Karşılaştırma tablosu
 - [ ] `ScoreCard` - Skor kartı (TCO, Durum, Uygunluk)
@@ -153,6 +165,7 @@
 - [ ] `ShareButton` - Paylaşım butonu
 
 ### 2.4 Layout Bileşenleri
+
 - [ ] `Header` - Üst navigasyon
 - [ ] `Footer` - Alt bilgi
 - [ ] `Container` - İçerik wrapper
@@ -160,12 +173,14 @@
 - [ ] `Grid` - Responsive grid sistemi
 
 ### 2.5 Responsive Tasarım
+
 - [ ] Mobile-first yaklaşım
 - [ ] Breakpoint'ler: sm, md, lg, xl
 - [ ] Touch-friendly buton boyutları
 - [ ] Mobile navigation (hamburger menu gerekirse)
 
 ### 2.6 Erişilebilirlik (A11y)
+
 - [ ] ARIA label'ları
 - [ ] Keyboard navigation
 - [ ] Focus management
@@ -180,6 +195,7 @@
 **Öncelik:** 🔴 Yüksek
 
 ### 3.1 Profil Formu
+
 - [ ] `ProfileForm` bileşeni oluştur
 - [ ] Yıllık km input (number, min/max validation)
 - [ ] Kullanım tipi seçimi (şehir içi/dışı oranı)
@@ -193,12 +209,14 @@
 - [ ] Form state yönetimi (Context veya state management)
 
 ### 3.2 Profil State Yönetimi
+
 - [ ] Profile context veya store oluştur
 - [ ] Profile verilerini localStorage'a kaydet (anonim kullanım)
 - [ ] Profile verilerini URL query params'a ekle (paylaşım için)
 - [ ] Profile reset fonksiyonu
 
 ### 3.3 Profil Ekranı UI
+
 - [ ] Açıklayıcı başlık ve alt başlık
 - [ ] Form alanları düzeni
 - [ ] Info tooltip'leri (varsayımlar için)
@@ -206,6 +224,7 @@
 - [ ] Progress indicator (1/4 adım)
 
 ### 3.4 Varsayımlar & Uyarılar
+
 - [ ] Varsayılan yakıt fiyatları (benzin, dizel, LPG)
 - [ ] "Gerçek kullanım sapması" bilgilendirmesi
 - [ ] Info icon'ları ve tooltip içerikleri
@@ -219,6 +238,7 @@
 **Öncelik:** 🔴 Yüksek
 
 ### 4.1 Kademeli Dropdown Sistemi
+
 - [ ] `VehicleSelector` bileşeni
 - [ ] Marka seçimi dropdown
   - [ ] API'den markaları çek
@@ -238,6 +258,7 @@
   - [ ] Trim detaylarını önizle
 
 ### 4.2 Araç Seçim Formu
+
 - [ ] `VehicleSelectionForm` bileşeni
 - [ ] İki araç için ayrı form (Araç A, Araç B)
 - [ ] Opsiyonel alanlar:
@@ -248,18 +269,21 @@
 - [ ] Form validation
 
 ### 4.3 Araç Önizleme
+
 - [ ] Seçilen trim'in temel bilgilerini göster
 - [ ] "Veri yok" durumları için placeholder
 - [ ] Loading skeleton
 - [ ] Hata durumu gösterimi
 
 ### 4.4 State Yönetimi
+
 - [ ] Vehicle selection state (Context/Store)
 - [ ] Seçilen araçları localStorage'a kaydet
 - [ ] URL query params ile paylaşım desteği
 - [ ] Form reset fonksiyonu
 
 ### 4.5 Kullanıcı Deneyimi İyileştirmeleri
+
 - [ ] Arama fonksiyonu (marka/model/trim)
 - [ ] Son seçilen araçları hatırla
 - [ ] "Popüler araçlar" önerisi
@@ -267,6 +291,7 @@
 - [ ] Auto-focus yönetimi
 
 ### 4.6 Hata Yönetimi
+
 - [ ] "Veri bulunamadı" mesajları
 - [ ] API hata durumları
 - [ ] Network timeout handling
@@ -280,12 +305,14 @@
 **Öncelik:** 🔴 Yüksek
 
 ### 5.1 Skorlama Algoritması Tasarımı
+
 - [ ] Skorlama formülü tasarımı
 - [ ] Ağırlık katsayıları belirleme
 - [ ] Test senaryoları hazırlama
 - [ ] Algoritma dokümantasyonu
 
 ### 5.2 TCO (Total Cost of Ownership) Hesaplama
+
 - [ ] `calculateTCO()` fonksiyonu
 - [ ] Yakıt maliyeti hesaplama
   - [ ] Yıllık km × tüketim (L/100km) × yakıt fiyatı
@@ -296,6 +323,7 @@
 - [ ] Karşılaştırmalı TCO skoru (0-100)
 
 ### 5.3 Durum (Condition) Skoru
+
 - [ ] `calculateConditionScore()` fonksiyonu
 - [ ] Araç yaşı hesaplama (seçilen yıl → bugün)
 - [ ] Beklenen km hesaplama (yaş × ortalama yıllık km)
@@ -304,6 +332,7 @@
 - [ ] Bilgi yoksa nötr skor
 
 ### 5.4 Uygunluk (Compatibility) Skoru
+
 - [ ] `calculateCompatibilityScore()` fonksiyonu
 - [ ] "Olmazsa olmaz" kontrolü
   - [ ] Yakıt türü eşleşmesi
@@ -314,6 +343,7 @@
 - [ ] Uygunluk skoru hesaplama (0-100)
 
 ### 5.5 Toplam Mantıklılık Skoru
+
 - [ ] `calculateTotalScore()` fonksiyonu
 - [ ] TCO, Durum, Uygunluk skorlarını birleştir
 - [ ] Ağırlıklandırılmış ortalama
@@ -321,6 +351,7 @@
 - [ ] "A mı B mi?" kararı (hangi araç daha mantıklı)
 
 ### 5.6 Gerekçe Üretimi
+
 - [ ] `generateReasons()` fonksiyonu
 - [ ] Her skor bileşeni için gerekçe üret
 - [ ] Kısa, net cümleler
@@ -329,6 +360,7 @@
 - [ ] Türkçe metin üretimi
 
 ### 5.7 Karşılaştırma Servisi
+
 - [ ] `src/services/comparisonService.ts` genişlet
 - [ ] `compareVehicles()` ana fonksiyon
 - [ ] Tüm skorları hesapla
@@ -337,6 +369,7 @@
 - [ ] Error handling
 
 ### 5.8 Test & Validasyon
+
 - [ ] Skorlama algoritması unit testleri
 - [ ] Edge case'ler (eksik veri, eşit skorlar, vb.)
 - [ ] Performans testi (hesaplama hızı)
@@ -350,6 +383,7 @@
 **Öncelik:** 🔴 Yüksek
 
 ### 6.1 Sonuç Ekranı Layout
+
 - [ ] `ResultsPage` bileşeni
 - [ ] Üst kısım: Tek cümle karar
   - [ ] "B daha mantıklı" gibi net ifade
@@ -362,12 +396,14 @@
 - [ ] Alt kısım: Detay tablosu
 
 ### 6.2 Karar Gösterimi
+
 - [ ] `DecisionBanner` bileşeni
 - [ ] Kazanan aracı vurgula
 - [ ] Skor farkını göster
 - [ ] Görsel tasarım (card, badge, vb.)
 
 ### 6.3 Skor Kartları
+
 - [ ] `ScoreCard` bileşeni (TCO, Durum, Uygunluk için)
 - [ ] Skor gösterimi (sayı + yüzde)
 - [ ] Kısa açıklama
@@ -375,12 +411,14 @@
 - [ ] Görsel gösterim (progress bar, renk kodlama)
 
 ### 6.4 Gerekçe Gösterimi
+
 - [ ] `ReasonsList` bileşeni
 - [ ] Her gerekçe için bullet point
 - [ ] Kısa, net cümleler
 - [ ] İkon desteği (opsiyonel)
 
 ### 6.5 Detay Karşılaştırma Tablosu
+
 - [ ] `ComparisonTable` bileşeni
 - [ ] İki sütun (Araç A, Araç B)
 - [ ] Kategori başlıkları:
@@ -398,17 +436,20 @@
 - [ ] "Belirtilmemiş" gösterimi (—)
 
 ### 6.6 Uyarı Şeridi
+
 - [ ] `WarningBanner` bileşeni
 - [ ] "Katalog verileri gerçek kullanımda farklılık gösterebilir" mesajı
 - [ ] Varsayımlar hakkında bilgi
 - [ ] Sorumluluk reddi metni
 
 ### 6.7 Eksik Veri Yönetimi
+
 - [ ] Eksik veri gösterimi (— veya "belirtilmemiş")
 - [ ] Eksik veri uyarıları
 - [ ] Manuel veri girişi önerisi (opsiyonel)
 
 ### 6.8 Responsive Tasarım
+
 - [ ] Mobile'da tablo scroll
 - [ ] Kartlar dikey sıralama
 - [ ] Touch-friendly butonlar
@@ -421,6 +462,7 @@
 **Öncelik:** 🟡 Orta
 
 ### 7.1 Paylaşım URL Sistemi
+
 - [ ] URL query params ile state encoding
 - [ ] `shareComparison()` fonksiyonu
 - [ ] Paylaşım URL'i oluşturma
@@ -428,6 +470,7 @@
 - [ ] Salt-okunur sayfa (`/compare/[id]` veya query params)
 
 ### 7.2 Paylaşım Sayfası
+
 - [ ] `SharedComparisonPage` bileşeni
 - [ ] URL'den karşılaştırma verilerini çek
 - [ ] Sonuç ekranını göster (salt-okunur)
@@ -435,12 +478,14 @@
 - [ ] Error handling (geçersiz URL)
 
 ### 7.3 Paylaşım Butonları
+
 - [ ] `ShareButton` bileşeni
 - [ ] URL kopyalama (clipboard API)
 - [ ] Sosyal medya paylaşımı (opsiyonel)
 - [ ] "Link kopyalandı" feedback
 
 ### 7.4 PDF Export
+
 - [ ] PDF kütüphanesi seçimi (react-pdf, jsPDF, vb.)
 - [ ] `generatePDF()` fonksiyonu
 - [ ] PDF template tasarımı
@@ -453,6 +498,7 @@
 - [ ] PDF önizleme (opsiyonel)
 
 ### 7.5 Paylaşım Optimizasyonları
+
 - [ ] URL kısaltma (opsiyonel)
 - [ ] SEO meta tags (paylaşım sayfası için)
 - [ ] Open Graph tags
@@ -466,6 +512,7 @@
 **Öncelik:** 🟡 Orta
 
 ### 8.1 Unit Testler
+
 - [ ] Skorlama algoritması testleri
 - [ ] Utility fonksiyon testleri
 - [ ] Form validation testleri
@@ -473,17 +520,20 @@
 - [ ] Jest veya Vitest kurulumu
 
 ### 8.2 Integration Testler
+
 - [ ] Kullanıcı akışı testleri
 - [ ] Form submission testleri
 - [ ] API entegrasyon testleri
 - [ ] State management testleri
 
 ### 8.3 E2E Testler (Opsiyonel)
+
 - [ ] Playwright veya Cypress kurulumu
 - [ ] Temel kullanıcı senaryoları
 - [ ] CI/CD entegrasyonu
 
 ### 8.4 Performans Optimizasyonu
+
 - [ ] Code splitting (route-based)
 - [ ] Lazy loading (bileşenler)
 - [ ] Image optimization
@@ -492,17 +542,20 @@
 - [ ] Core Web Vitals optimizasyonu
 
 ### 8.5 SEO Optimizasyonu
+
 - [ ] Meta tags (title, description)
 - [ ] Structured data (JSON-LD)
 - [ ] Sitemap oluşturma
 - [ ] robots.txt
 
 ### 8.6 Error Tracking
+
 - [ ] Error boundary'ler
 - [ ] Error logging (Sentry veya benzeri, opsiyonel)
 - [ ] User feedback mekanizması
 
 ### 8.7 Analytics (Opsiyonel)
+
 - [ ] Google Analytics veya benzeri
 - [ ] Event tracking (karşılaştırma tamamlama, paylaşım, vb.)
 - [ ] Conversion tracking
@@ -515,12 +568,14 @@
 **Öncelik:** 🔴 Yüksek
 
 ### 9.1 Production Build
+
 - [ ] Production build testi
 - [ ] Environment variables ayarlama
 - [ ] Build optimizasyonları
 - [ ] Static asset optimization
 
 ### 9.2 Hosting & Deployment
+
 - [ ] Vercel/Netlify kurulumu (veya tercih edilen platform)
 - [ ] Domain ayarları
 - [ ] SSL sertifikası
@@ -528,12 +583,14 @@
 - [ ] Environment variables (production)
 
 ### 9.3 Monitoring & Logging
+
 - [ ] Uptime monitoring
 - [ ] Error monitoring
 - [ ] Performance monitoring
 - [ ] Log aggregation (opsiyonel)
 
 ### 9.4 Pre-Launch Checklist
+
 - [ ] Tüm özellikler test edildi
 - [ ] Mobile responsive test
 - [ ] Cross-browser test (Chrome, Firefox, Safari, Edge)
@@ -545,6 +602,7 @@
 - [ ] Terms of service
 
 ### 9.5 Launch
+
 - [ ] Beta test (sınırlı kullanıcı)
 - [ ] Feedback toplama
 - [ ] Hızlı bug fix'ler
@@ -552,6 +610,7 @@
 - [ ] Marketing materyalleri (opsiyonel)
 
 ### 9.6 Post-Launch
+
 - [ ] Kullanıcı feedback'i toplama
 - [ ] Analytics verilerini inceleme
 - [ ] Başarı ölçütlerini kontrol et
@@ -566,6 +625,7 @@
 ## 📊 Genel İlerleme Takibi
 
 ### Öncelik Sıralaması
+
 1. **Faz 0-1:** Altyapı ve veri katmanı (kritik)
 2. **Faz 2-3:** UI ve profil (kritik)
 3. **Faz 4-5:** Araç seçimi ve skorlama (kritik)
@@ -574,10 +634,12 @@
 6. **Faz 8-9:** Test ve deployment (önemli)
 
 ### Tahmini Toplam Süre
+
 - **MVP için:** 50-70 iş günü (~10-14 hafta)
 - **Hızlandırılmış:** 35-50 iş günü (ekip ile)
 
 ### Bağımlılıklar
+
 - Faz 1 → Faz 4 (veri katmanı olmadan araç seçimi yapılamaz)
 - Faz 3 → Faz 5 (profil olmadan skorlama yapılamaz)
 - Faz 4-5 → Faz 6 (araç seçimi ve skorlama olmadan sonuç gösterilemez)
@@ -588,12 +650,14 @@
 ## 🔄 Sürekli İyileştirme (Post-MVP)
 
 ### Kısa Vadeli (1-2 ay)
+
 - [ ] Kullanıcı feedback'lerine göre UI/UX iyileştirmeleri
 - [ ] Performans optimizasyonları
 - [ ] Daha fazla marka/model desteği
 - [ ] Donanım etiketlerini zenginleştirme
 
 ### Orta Vadeli (3-6 ay)
+
 - [ ] 3+ araç karşılaştırması
 - [ ] Favoriler ve geçmiş
 - [ ] Basit hesap sistemi (oturum)
@@ -601,6 +665,7 @@
 - [ ] Gerçek dünya tüketim verileri entegrasyonu
 
 ### Uzun Vadeli (6+ ay)
+
 - [ ] Vergi/kasko hesaplamaları
 - [ ] TRAMER/ekspertiz entegrasyonu
 - [ ] Canlı piyasa fiyatı
@@ -623,4 +688,3 @@
 **Son Güncelleme:** 2024  
 **Versiyon:** 1.0  
 **Durum:** Planlama aşaması
-
