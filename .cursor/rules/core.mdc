@@ -1,0 +1,25 @@
+---
+description: Hangi Araba projesi genel kuralları
+alwaysApply: true
+---
+
+# Geliştirme Kuralları
+- Proje Next.js + TypeScript kullanır.
+- Kod stili Prettier / ESLint ile uyumlu olmalıdır.
+- Kodda Türkçe açıklama ve değişken isimleri kullanma.
+- Veriler yalnızca CarQuery API veya CSV seed üzerinden gelir; **scraping yapılmaz.**
+- Testler kısa, Jest veya Vitest ile yazılır.
+- Chat promptlarında “hangi dosyayı değiştireceğini” açık belirt.
+- API anahtarları `.env` dosyasında tutulur, commit edilmez.
+
+# PR Akışı
+- `feat/`, `fix/`, `chore/` prefix’li branch’ler.
+- PR’lar küçük tutulur; her PR 1 konu içerir.
+- Merge için PR zorunludur.
+
+# UI Rehberi
+- TailwindCSS kullan.
+- Bileşen adları PascalCase.
+- Dosya yapısı: `src/features/<feature>`.
+
+@src/
