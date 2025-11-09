@@ -66,9 +66,9 @@
 
 ### 0.4 Dokümantasyon
 
-- [ ] `CONTRIBUTING.md` oluştur
-- [ ] `ARCHITECTURE.md` oluştur (klasör yapısı açıklaması)
-- [ ] README.md'yi projeye göre güncelle
+- [x] `CONTRIBUTING.md` oluştur
+- [x] `ARCHITECTURE.md` oluştur (klasör yapısı açıklaması)
+- [x] README.md'yi projeye göre güncelle
 
 ---
 
@@ -688,3 +688,4 @@
 **Son Güncelleme:** 2024  
 **Versiyon:** 1.0  
 **Durum:** Planlama aşaması
+
